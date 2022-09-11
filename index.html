@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <main>
+      <div class="score-tab">
+        <div class="title">
+          <p>ROCK</p>
+          <p>PAPER</p>
+          <p>SCISSORS</p>
+        </div>
+        <div class="score">
+          <p>SCORE</p>
+          <h1 class="score-num">0</h1>
+        </div>
+      </div>
+      <div class="container">
+        <div class="game-wrapper">
+          <div class="disc paper" id="paper">
+            <div class="inner">
+              <img src="images/icon-paper.svg" alt="flat palm" />
+            </div>
+          </div>
+          <div class="disc scissors" id="scissors">
+            <div class="inner">
+              <img
+                src="images/icon-scissors.svg"
+                alt="peace sign with "
+              />
+            </div>
+          </div>
+          <div class="disc rock" id="rock">
+            <div class="inner">
+              <img src="images/icon-rock.svg" alt="fisted palm" />
+            </div>
+          </div>
+        </div>
+        <div class="game-board">
+          <div class="player player-1">
+            <p>YOU PICKED</p>
+          </div>
+          <div class="verdict">
+            <h1>YOU LOSE</h1>
+            <button>PLAY AGAIN</button>
+          </div>
+          <div class="player player-2">
+            <div class="shadow">
+              <div class="shadow-inner"></div>
+            </div>
+            <p>THE HOUSE PICKED</p>
+          </div>
+        </div>
+
+        <div class="rules-container">
+          <div class="rules-info">
+            <h2>RULES</h2>
+            <img
+              src="images/image-rules.svg"
+              alt="rock, paper, scissors rules"
+            />
+            <div class="close-btn">
+              <img src="images/icon-close.svg" alt="close icon" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rules">
+        <button class="open">RULES</button>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
