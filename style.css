@@ -1,4 +1,3 @@
-@import "compass/css3";
 * {
   margin: 0;
   padding: 0;
@@ -282,7 +281,9 @@ main {
   .rules-container::before {
     content: "";
     background-color: black;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
     opacity: 50%;
     width: 100%;
     height: 100%;
